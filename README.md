@@ -1,6 +1,6 @@
 # **Malicious URL Detection**
 
-This project aims to detect malicious URLs using advanced machine learning techniques. By extracting key features from raw URL data, applying preprocessing strategies, and leveraging ensemble learning models, the project achieves high accuracy in predicting URL categories (e.g., benign, malicious).
+This project aims to detect malicious URLs using advanced machine learning techniques. By extracting key features from raw URL data, applying preprocessing strategies, and leveraging ensemble learning models, the project achieves high accuracy in predicting URL categories (e.g., benign, phishing, malware).
 
 ---
 
@@ -32,7 +32,7 @@ Stacking is an ensemble learning technique that combines multiple models (base e
 
 1. **Feature Extraction**:  
    - Parsed URLs to derive meaningful features like `URL length`, `number of special characters`, `query parameters`, and `subdomain levels`.  
-   - Identified patterns such as `presence of IP in the domain` and `HTTPS usage` to improve malicious detection.  
+   - Identified patterns such as `presence of numeric patterns in the domain` and `HTTPS presence` to improve malicious detection.    
 
 2. **Data Balancing and Scaling**:  
    - SMOTE was applied to address class imbalance, ensuring equal representation of target classes.  
@@ -52,7 +52,7 @@ Stacking is an ensemble learning technique that combines multiple models (base e
 ## **Technologies Used**
 
 - **Programming Language**: Python  
-- **Libraries**: Pandas, NumPy, Scikit-learn, Imbalanced-learn, XGBoost, Matplotlib, Seaborn  
+- **Libraries**: Pandas, NumPy, Scikit-learn, Imbalanced-learn, XGBoost  
 
 ---
 
